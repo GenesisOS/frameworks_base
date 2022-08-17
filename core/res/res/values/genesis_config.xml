@@ -24,6 +24,9 @@
     <!-- Whether to force enable multi resolution configuration for camera -->
     <bool name="config_forceMultiResolution">false</bool>
 
+    <!-- Whether to cancel fingerprint operation if not idle -->
+    <bool name="config_fpCancelIfNotIdle">false</bool>
+
     <!-- Whether to spoof GMS as Pixel Tablet -->
     <bool name="config_spoofasTablet">false</bool>
 
