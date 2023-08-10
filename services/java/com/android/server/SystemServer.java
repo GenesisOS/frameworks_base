@@ -178,6 +178,7 @@ import com.android.server.display.color.ColorDisplayService;
 import com.android.server.dreams.DreamManagerService;
 import com.android.server.emergency.EmergencyAffordanceService;
 import com.android.server.flags.FeatureFlagsService;
+import com.android.server.genesis.GenesisDeviceConfigService;
 import com.android.server.gpu.GpuService;
 import com.android.server.grammaticalinflection.GrammaticalInflectionService;
 import com.android.server.graphics.fonts.FontManagerService;
@@ -2861,6 +2862,11 @@ public final class SystemServer implements Dumpable {
 
             t.traceBegin("StartMediaMetricsManager");
             mSystemServiceManager.startService(MediaMetricsManagerService.class);
+            t.traceEnd();
+
+            // GenesisDeviceConfigService
+            t.traceBegin("StartGenesisDeviceConfigService");
+            mSystemServiceManager.startService(GenesisDeviceConfigService.class);
             t.traceEnd();
 
             if (SystemProperties.getBoolean(
