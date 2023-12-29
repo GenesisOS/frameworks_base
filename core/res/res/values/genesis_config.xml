@@ -24,6 +24,9 @@
     <!-- Whether to force enable multi resolution configuration for camera -->
     <bool name="config_forceMultiResolution">false</bool>
 
+    <!-- Whether to spoof GMS as Pixel Tablet -->
+    <bool name="config_spoofasTablet">false</bool>
+
     <!-- Build properties from a GMS certified device against current platform SPL level -->
     <string-array name="config_certifiedBuildProperties" translatable="false">
       <!--
